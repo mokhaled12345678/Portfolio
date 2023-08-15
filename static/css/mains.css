@@ -1,0 +1,414 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Work+Sans:ital,wght@0,300;0,500;0,700;0,800;1,200;1,600&display=swap');
+
+* {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+/* style header */
+header {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    background-color: #3a6cf4;
+    align-items: center;
+    padding: 10px 20px;
+    position: fixed;
+    z-index: 999;
+}
+
+nav > ul > li,
+nav > ul > li > a {
+    display: inline;
+    list-style-type: none;
+    padding-left: 20px;
+    transition: 0.4s ease;
+    font-size: 1em;
+}
+
+nav > ul > li > a:hover {
+    color: #749bc2;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.logo {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.8em;
+}
+
+section {
+    padding: 100px 20px;
+}
+
+.main {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #f6f4eb;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.image {
+    border-radius: 50%;
+    height: 300px;
+    width: 300px;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+    display: inline-block;
+    vertical-align: middle;
+    margin: 20px;
+}
+
+.main > *,
+.main > div {
+    display: inline-block;
+    width: 100%;
+}
+
+.main h2 {
+    margin-bottom: 40px;
+    font-size: 1.5em;
+}
+
+.main h3,
+.main h2 {
+    color: #749bc2;
+}
+
+.main h3 {
+    margin-bottom: 20px;
+}
+
+.main span {
+    display: inline-block;
+    margin-top: 10px;
+    font-size: 1.6em;
+    color: #3a6cf4;
+}
+
+.social-icons > * {
+    font-size: 1.8em;
+    color: #91c8e4;
+    margin-right: 20px;
+    transition: 0.7s ease;
+}
+
+.social-icons a:hover {
+    color: #3a6cf4;
+}
+
+.main-btn {
+    display: inline-block;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.1em;
+    border-radius: 10px;
+    padding: 15px;
+    background-color: #3a6cf4;
+    margin-bottom: 15px;
+    transition: 0.7s ease;
+}
+
+.main-btn:hover {
+    background-color: #0a49f6;
+    transform: scale(1.1);
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    color: #3a6cf4;
+    font-size: 2.2em;
+    font-weight: 800;
+    margin-bottom: 30px;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: #fff;
+    width: 21.25em;
+    box-shadow: 0 5px 25px rgba(1 1 1 / 15%);
+    border-radius: 10px;
+    padding: 25px;
+    margin: 15px;
+    transition: 0.7s ease;
+}
+
+.card:hover {
+    transform: scale(1.1);
+}
+
+.card-image {
+    text-align: center;
+}
+
+.card-title {
+    color: #4682a9;
+    font-size: 1.2em;
+    font-weight: 800;
+    margin: 10px;
+}
+
+.card-image img {
+    height: 11.8125em;
+    width: 11.8125em;
+    border-radius: 10px;
+    box-shadow: 0 5px 25px rgba(1 1 1 / 15%);
+}
+
+.card-detale {
+    color: #71a2bb;
+    font-size: 1.1em;
+}
+
+#projects {
+    background-color: #fff;
+}
+
+.project-link {
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    position: relative;
+    right: 10px;
+    margin-top: 10px;
+}
+
+.project-link a {
+    background-color: #3a6cf4;
+    padding: 6px;
+    border-radius: 6px;
+    transition: 0.7s ease;
+}
+
+#services {
+    background-color: #f6f4eb;
+}
+
+#about-me-cont > div {
+    margin: 20px;
+    box-shadow: 0 5px 25px rgba(1 1 1 / 15%);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+#about-me {
+    width: 100%;
+}
+
+#about-me p > span {
+    font-weight: bold;
+}
+
+.about-card h2 {
+    color: #3a6cf4;
+    font-weight: 800;
+    font-size: 1.9em;
+    margin-bottom: 30px;
+}
+
+.about-card p {
+    font-size: 1.3em;
+    color: #4682a9;
+    font-weight: 400;
+}
+
+.about-card ul {
+    margin-top: 20px;
+}
+
+.about-card ul,
+.about-card li {
+    list-style-type: none;
+    font-size: 1.2em;
+    font-weight: 600;
+    color: #71a2bb;
+}
+
+#skills ul,
+#skills li {
+    list-style-type: none;
+}
+
+#skills {
+    width: 100%;
+}
+
+#skills h2 {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#skills li {
+    font-size: 1.2em;
+    font-weight: 600;
+    color: #71a2bb;
+}
+
+.about-card {
+    transition: 0.7s ease;
+}
+
+.about-card:hover {
+    transform: scale(0.9);
+}
+
+.about-card li:hover {
+    color: #2588ca;
+}
+
+#skills ul,
+#skills li {
+    transition: 0.4s ease;
+}
+
+#skills li:hover {
+    font-size: 1.4em;
+    color: #2588ca;
+}
+
+.pro-li {
+    transition: 0.7s ease;
+}
+
+.pro-li:hover {
+    transform: scale(1.1);
+    background-color: #2588ca;
+}
+
+/* Media Queries */
+
+@media (max-width: 768px) {
+
+    .logo {
+        font-size: 1.3em;
+    }
+
+    nav > ul > li,
+    nav > ul > li > a {
+    display: inline;
+    list-style-type: none;
+    padding-left: 13px;
+    transition: 0.4s ease;
+    font-size: 0.8em;
+    }
+    header {
+        padding: 10px;
+    }
+
+    .main h2 {
+        font-size: 1.2em;
+    }
+
+    .image {
+        margin: 20px auto;
+    }
+
+    .main > div {
+        margin-top: 0;
+    }
+
+    .content {
+        justify-content: flex-start;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    #about-me-cont > div {
+        margin: 20px auto;
+    }
+
+    #about-me,
+    #skills {
+        width: 100%;
+    }
+
+    /* Additional media queries for devices with smaller screens */
+
+    .card-image img {
+        height: 9.375em;
+        width: 9.375em;
+    }
+
+    .card-title {
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 500px) {
+
+    nav > ul > li,
+    nav > ul > li > a {
+    display: inline;
+    list-style-type: none;
+    padding-left: 2px;
+    transition: 0.4s ease;
+    font-size: 0.8em;
+    }
+
+    .logo {
+        font-size: 1em;
+    }
+
+    header {
+        padding: 6px;
+    }
+
+    .main h2 {
+        font-size: 1.2em;
+    }
+
+    .image {
+        margin: 20px auto;
+    }
+
+    .main > div {
+        margin-top: 0;
+    }
+
+    .content {
+        justify-content: flex-start;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    #about-me-cont > div {
+        margin: 20px auto;
+    }
+
+    #about-me,
+    #skills {
+        width: 100%;
+    }
+
+    /* Additional media queries for devices with smaller screens */
+
+    .card-image img {
+        height: 9.375em;
+        width: 9.375em;
+    }
+
+    .card-title {
+        font-size: 1em;
+    }
+}
